@@ -1,8 +1,8 @@
 package com.xiaoxu.provider.controller;
 
-import com.xiaoxu.provider.entities.Payment;
+import com.xiaoxu.api.entities.Payment;
+import com.xiaoxu.api.entities.utils.CommonResult;
 import com.xiaoxu.provider.service.PaymentService;
-import com.xiaoxu.provider.utils.CommonResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;

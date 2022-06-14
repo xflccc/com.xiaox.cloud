@@ -13,4 +13,4 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml    # mapper文件路径
-  type-aliases-package: com.xiaoxu.provider.entities    # 所有Entity别名类所在包
+  type-aliases-package: com.xiaoxu.api.entities    # 所有Entity别名类所在包

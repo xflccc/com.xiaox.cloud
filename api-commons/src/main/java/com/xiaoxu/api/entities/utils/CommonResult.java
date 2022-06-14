@@ -1,4 +1,4 @@
-package com.xiaoxu.order.utils;
+package com.xiaoxu.api.entities.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

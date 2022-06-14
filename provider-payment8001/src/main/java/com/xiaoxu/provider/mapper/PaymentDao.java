@@ -1,6 +1,6 @@
 package com.xiaoxu.provider.mapper;
 
-import com.xiaoxu.provider.entities.Payment;
+import com.xiaoxu.api.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

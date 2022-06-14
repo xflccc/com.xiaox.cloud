@@ -1,6 +1,6 @@
 package com.xiaoxu.provider.service.impl;
 
-import com.xiaoxu.provider.entities.Payment;
+import com.xiaoxu.api.entities.Payment;
 import com.xiaoxu.provider.mapper.PaymentDao;
 import com.xiaoxu.provider.service.PaymentService;
 import org.springframework.stereotype.Service;

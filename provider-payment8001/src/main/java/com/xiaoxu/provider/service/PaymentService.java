@@ -1,8 +1,7 @@
 package com.xiaoxu.provider.service;
 
-import com.xiaoxu.provider.entities.Payment;
+import com.xiaoxu.api.entities.Payment;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
