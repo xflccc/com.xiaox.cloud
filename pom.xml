@@ -8,6 +8,12 @@
     <artifactId>com.xiaox.cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging><!-- 这里添加，注意不是jar或war -->
+    <modules>
+        <module>provider-payment8001</module>
+        <module>consumer-order80</module>
+    </modules>
+
+
 
 
     <!-- 统一管理jar包版本 -->
