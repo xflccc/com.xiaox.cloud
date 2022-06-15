@@ -18,9 +18,14 @@ import java.util.List;
 public class OrderController {
 
     /**
-     * 生产者地址
+     * 生产者地址 单机版
      */
     public static final String PAYMENT_URL = "http://localhost:8001";
+
+    /**
+     * 客户端 生产者地址 eureka集群版
+     */
+    public static final String MULIT_PAYMENT_URL = "http://PROVIDER-PAYMMENT";
 
     /**
      * 客户端
@@ -30,16 +35,16 @@ public class OrderController {
 
     @RequestMapping("/list")
     public CommonResult<List<Payment>> getList(){
-        return restTemplate.getForObject(PAYMENT_URL + "/payment/list",CommonResult.class);
+        return restTemplate.getForObject(MULIT_PAYMENT_URL + "/payment/list",CommonResult.class);
     }
 
     @GetMapping(value = "/get/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id){
-        return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id,CommonResult.class);
+        return restTemplate.getForObject(MULIT_PAYMENT_URL + "/payment/get/" + id,CommonResult.class);
     }
 
     @GetMapping(value = "/create")
     public CommonResult<Payment>  create(@RequestBody Payment payment){
-        return restTemplate.postForObject(PAYMENT_URL + "/payment/create/" ,payment,CommonResult.class);
+        return restTemplate.postForObject(MULIT_PAYMENT_URL + "/payment/create/" ,payment,CommonResult.class);
     }
 }
