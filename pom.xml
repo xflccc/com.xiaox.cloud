@@ -20,6 +20,7 @@
         <module>nacos-provider-payment9001</module>
         <module>nacos-provider-payment9002</module>
         <module>nacos-consumer-order83</module>
+        <module>nacos-config-client3377</module>
     </modules>
 
 
